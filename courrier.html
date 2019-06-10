@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Courrier</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light justify-content-between flex-wrap flex-md-nowrap">
+                <img class="ml-3" src="img/logo.png" alt="" style="width:200px;">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse scroll3 navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto justify-content-end">
+                        <li class="nav-item ">
+                        <a class="nav-link" href="dashboard.html">Dashboard <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="courrier.html">Control</a>
+                            <ul class="subMenu">
+                                <li><a href="courrier.html">Courrier</a></li>
+                                <li><a href="">Control</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pos.html">Herramientas</a>
+                            <ul class="subMenu">
+                                <li><a href="">Reportes</a></li>
+                                <li><a href="pos.html">POS</a></li>
+                                <li><a href="">Ventas POS</a></li>
+                                <li><a href="">Ubigeo y Zipcode</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tiendas</a>
+                            <ul class="subMenu">
+                                <li><a href="">Compañías</a></li>
+                                <li><a href="">Tiendas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item salir">
+                            <a class="nav-link" href="login.html">Salir</a>
+                        </li>
+                    </ul>
+                    <div class="avatar-left">
+                        <span>
+                            <strong>Admin</strong><br>
+                            Administrador
+                        </span>
+                    </div>
+                    <div class="avatar">
+                        <img class="" src="img/avatar.jpg" alt="" style="width:40px;">
+                        <a href="" class="fa fa-caret-down"></a>
+                        <ul class="subMenu">
+                            <li><a href="login.html">Cerrar Sesión</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="content">
+            <div class="row">
+                <div class="col-12 col-md-9  p-0 ">
+                    <div class="bgLight px-3 pt-4 pb-2">
+                        <h3><span>Detalle de</span> Courriers registrados </h3>
+                        <a class="btn-orange2 btn btn-lg mt-2  float-md-right" href="">Nuevo</a>
+                        <div class="form-inline">
+                            <select class="pr-2" name="filtro" id="">
+                                <option value="">Código</option>
+                                <option value="">Fecha</option>
+                                <option value="">Estado</option>
+                            </select>
+                            <div class="form-label-group ml-3">
+                                <input type="email" id="inputEmail" class=" form-control" placeholder="Estado" required autofocus>
+                                <label for="inputEmail">Estado</label>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="scroll cardList px-3 pt-3 pb-0">
+                        
+                        <div class="row">
+                            <!-- start order 1 -->
+                             <div class="col-md-4">
+                                <div class="order mb-2 active">
+                                    <div class="cardOrder p-3">
+                                        <div class="stateCard p-0"><i class="state green fas fa-circle"></i></div>
+                                        <h5><span>courrier</span> Marcelo Arana</h5>
+                                        <p><strong>Teléfono: </strong> 763753753</p>
+                                        <p><strong>Correo:</strong> courrier1@gmail.com</p>
+                                        <p><strong>Estado:</strong> Activo</p>
+                                        <div class="optionGroup d-flex flex-row justify-content-end align-items-end" style="height: 30px;">
+                                            <a class="btn-orange2"  href="#editCourrier" >Editar</a>
+                                            <a class="btn-red ml-2" data-toggle="modal" data-target="#modalBorrarOrdn" href="javascript:void(0)" ><i class="far fa-times-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- start order 2 -->
+                            <div class="col-md-4">
+                                <div class="order mb-2 active">
+                                    <div class="cardOrder p-3">
+                                        <div class="stateCard p-0"><i class="state yellow fas fa-circle"></i></div>
+                                        <h5><span>courrier</span> Marcelo Arana</h5>
+                                        <p><strong>Teléfono: </strong> 763753753</p>
+                                        <p><strong>Correo:</strong> courrier1@gmail.com</p>
+                                        <p><strong>Estado:</strong> Activo</p>
+                                        <div class="optionGroup d-flex flex-row justify-content-end align-items-end" style="height: 30px;">
+                                            <a class="btn-orange2"  href="#editCourrier" >Editar</a>
+                                            <a class="btn-red ml-2" data-toggle="modal" data-target="#modalBorrarOrdn" href="javascript:void(0)" ><i class="far fa-times-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <!-- start order 3 -->
+                            <div class="col-md-4">
+                                <div class="order mb-2 active">
+                                    <div class="cardOrder p-3">
+                                        <div class="stateCard p-0"><i class="state yellow fas fa-circle"></i></div>
+                                        <h5><span>courrier</span> Marcelo Arana</h5>
+                                        <p><strong>Teléfono: </strong> 763753753</p>
+                                        <p><strong>Correo:</strong> courrier1@gmail.com</p>
+                                        <p><strong>Estado:</strong> Activo</p>
+                                        <div class="optionGroup d-flex flex-row justify-content-end align-items-end" style="height: 30px;">
+                                            <a class="btn-orange2"  href="#editCourrier" >Editar</a>
+                                            <a class="btn-red ml-2" data-toggle="modal" data-target="#modalBorrarOrdn" href="javascript:void(0)" ><i class="far fa-times-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- start order 3 -->
+                            <div class="col-md-4">
+                                <div class="order mb-2 active">
+                                    <div class="cardOrder p-3">
+                                        <div class="stateCard p-0"><i class="state red fas fa-circle"></i></div>
+                                        <h5><span>courrier</span> Marcelo Arana</h5>
+                                        <p><strong>Teléfono: </strong> 763753753</p>
+                                        <p><strong>Correo:</strong> courrier1@gmail.com</p>
+                                        <p><strong>Estado:</strong> Activo</p>
+                                        <div class="optionGroup d-flex flex-row justify-content-end align-items-end" style="height: 30px;">
+                                            <a class="btn-orange2"  href="#editCourrier" >Editar</a>
+                                            <a class="btn-red ml-2" data-toggle="modal" data-target="#modalBorrarOrdn" href="javascript:void(0)" ><i class="far fa-times-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- start order 3 -->
+                            <div class="col-md-4">
+                                <div class="order mb-2 active">
+                                    <div class="cardOrder p-3">
+                                        <div class="stateCard p-0"><i class="state green fas fa-circle"></i></div>
+                                        <h5><span>courrier</span> Marcelo Arana</h5>
+                                        <p><strong>Teléfono: </strong> 763753753</p>
+                                        <p><strong>Correo:</strong> courrier1@gmail.com</p>
+                                        <p><strong>Estado:</strong> Activo</p>
+                                        <div class="optionGroup d-flex flex-row justify-content-end align-items-end" style="height: 30px;">
+                                            <a class="btn-orange2"  href="#editCourrier" >Editar</a>
+                                            <a class="btn-red ml-2" data-toggle="modal" data-target="#modalBorrarOrdn" href="javascript:void(0)" ><i class="far fa-times-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- start order 1 -->
+                            <div class="col-md-4">
+                                    <div class="order mb-2 active">
+                                        <div class="cardOrder p-3">
+                                            <div class="stateCard p-0"><i class="state green fas fa-circle"></i></div>
+                                            <h5><span>courrier</span> Marcelo Arana</h5>
+                                            <p><strong>Teléfono: </strong> 763753753</p>
+                                            <p><strong>Correo:</strong> courrier1@gmail.com</p>
+                                            <p><strong>Estado:</strong> Activo</p>
+                                            <div class="optionGroup d-flex flex-row justify-content-end align-items-end" style="height: 30px;">
+                                                <a class="btn-orange2"  href="#editCourrier" >Editar</a>
+                                                <a class="btn-red ml-2" data-toggle="modal" data-target="#modalBorrarOrdn" href="javascript:void(0)" ><i class="far fa-times-circle"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- start order 2 -->
+                                <div class="col-md-4">
+                                    <div class="order mb-2 active">
+                                        <div class="cardOrder p-3">
+                                            <div class="stateCard p-0"><i class="state green fas fa-circle"></i></div>
+                                            <h5><span>courrier</span> Marcelo Arana</h5>
+                                            <p><strong>Teléfono: </strong> 763753753</p>
+                                            <p><strong>Correo:</strong> courrier1@gmail.com</p>
+                                            <p><strong>Estado:</strong> Activo</p>
+                                            <div class="optionGroup d-flex flex-row justify-content-end align-items-end" style="height: 30px;">
+                                                <a class="btn-orange2"  href="#editCourrier" >Editar</a>
+                                                <a class="btn-red ml-2" data-toggle="modal" data-target="#modalBorrarOrdn" href="javascript:void(0)" ><i class="far fa-times-circle"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                
+                                <!-- start order 3 -->
+                                <div class="col-md-4">
+                                    <div class="order mb-2 active">
+                                        <div class="cardOrder p-3">
+                                            <div class="stateCard p-0"><i class="state green fas fa-circle"></i></div>
+                                            <h5><span>courrier</span> Marcelo Arana</h5>
+                                            <p><strong>Teléfono: </strong> 763753753</p>
+                                            <p><strong>Correo:</strong> courrier1@gmail.com</p>
+                                            <p><strong>Estado:</strong> Activo</p>
+                                            <div class="optionGroup d-flex flex-row justify-content-end align-items-end" style="height: 30px;">
+                                                <a class="btn-orange2"  href="#editCourrier" >Editar</a>
+                                                <a class="btn-red ml-2" data-toggle="modal" data-target="#modalBorrarOrdn" href="javascript:void(0)" ><i class="far fa-times-circle"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <!-- start order 3 -->
+                                <div class="col-md-4">
+                                    <div class="order mb-2 active">
+                                        <div class="cardOrder p-3">
+                                            <div class="stateCard p-0"><i class="state green fas fa-circle"></i></div>
+                                            <h5><span>courrier</span> Marcelo Arana</h5>
+                                            <p><strong>Teléfono: </strong> 763753753</p>
+                                            <p><strong>Correo:</strong> courrier1@gmail.com</p>
+                                            <p><strong>Estado:</strong> Activo</p>
+                                            <div class="optionGroup d-flex flex-row justify-content-end align-items-end" style="height: 30px;">
+                                                <a class="btn-orange2"  href="#editCourrier" >Editar</a>
+                                                <a class="btn-red ml-2" data-toggle="modal" data-target="#modalBorrarOrdn" href="javascript:void(0)" ><i class="far fa-times-circle"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- start order 3 -->
+                                <div class="col-md-4">
+                                    <div class="order mb-2 active">
+                                        <div class="cardOrder p-3">
+                                            <div class="stateCard p-0"><i class="state green fas fa-circle"></i></div>
+                                            <h5><span>courrier</span> Marcelo Arana</h5>
+                                            <p><strong>Teléfono: </strong> 763753753</p>
+                                            <p><strong>Correo:</strong> courrier1@gmail.com</p>
+                                            <p><strong>Estado:</strong> Activo</p>
+                                            <div class="optionGroup d-flex flex-row justify-content-end align-items-end" style="height: 30px;">
+                                                <a class="btn-orange2"  href="#editCourrier" >Editar</a>
+                                                <a class="btn-red ml-2" data-toggle="modal" data-target="#modalBorrarOrdn" href="javascript:void(0)" ><i class="far fa-times-circle"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                            
+                    </div>
+                </div>
+                <div id="editCourrier" class=" col-12 col-md-3 fade-in p-0  bgLight cardForm px-5 py-5">
+                    <div class="fade-in active">
+                        <h3 > Nuevo Courrier
+                        <span>La casa del alfajor</span>
+                        </h3>
+                        
+                        <div class="form mt-5">
+                            <div class="form-label-group ">
+                                <input type="text" id="inputNombre" class=" form-control" placeholder="Estado" required >
+                                <label for="inputNombre">Nombre</label>
+                            </div>
+                            <div class="form-label-group ">
+                                <input type="text" id="inputCorreo" class=" form-control" placeholder="Estado"  >
+                                <label for="inputCorreo">Correo</label>
+                            </div>
+                            <div class="form-label-group ">
+                                <input type="text" id="inputTelefono" class=" form-control" placeholder="Estado"  >
+                                <label for="inputTelefono">Teléfono</label>
+                            </div>
+                            <div class="form-label-group ">
+                                <input type="password" id="inputContraseña" class=" form-control" placeholder="Estado"  >
+                                <label for="inputContraseña">Contraseña</label>
+                            </div>
+                            <div class="form-label-group ">
+                                <input type="password" id="inputConfirmContraseña" class=" form-control" placeholder="Estado"  >
+                                <label for="inputConfirmContraseña">Repetir Contraseña</label>
+                            </div>
+                           
+                            <a class="btn-orange2 btn btn-lg mt-2 ml-2 float-md-right" data-toggle="modal" data-target="#modalEditarCourrier"  href="">Editar</a>
+                            <a class="btn-dark2 btn btn-lg mt-2  float-md-right" data-toggle="modal" data-target="#modalGuardarCourrier"  href="">Guardar</a>
+                        </div>
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal Emiminar orden-->
+        <div class="modal fade" id="modalBorrarOrdn" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="small">Quieres eliminar al courrier</div> 
+                        <h5>Marcelo Arana</h5>
+                        <img class="ml-3" src="img/courrier.jpg" alt="" style="width:200px;">
+                    </div>
+                    <div class="modal-footer pb-5">
+                    <button type="button" class="btn btn-aceptar btn-bg btn-dark2 " data-dismiss="modal">Aceptar</button>
+                    <button type="button" data-dismiss="modal"  class="btn-bg btn btn-cancelar btn-orange2">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal Cambiar Tienda-->
+        <div class="modal fade" id="modalGuardarCourrier" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="small">Se guardó exitosamente el nuevo Courrier</div> 
+                        <h5>Marcelo Arana</h5>
+                        
+                        <img class="ml-3" src="img/courrieradd.jpg" alt="" style="width:200px;">
+                    </div>
+                    <div class="modal-footer pb-5">
+                    <button type="button" class="btn btn-aceptar btn-bg btn-dark2 " data-dismiss="modal">Aceptar</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Modal Cambiar Tienda-->
+        <div class="modal fade" id="modalEditarCourrier" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="small">Se guardó exitosamente el nuevo Courrier</div> 
+                        <h5>Marcelo Arana</h5>
+                        
+                        <img class="ml-3" src="img/courrieredit.jpg" alt="" style="width:200px;">
+                    </div>
+                    <div class="modal-footer pb-5">
+                    <button type="button" class="btn btn-aceptar btn-bg btn-dark2 " data-dismiss="modal">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" charset="utf-8"></script>
+        <!-- Libraries -->
+        <script src="js/main.js" charset="utf-8"></script>
+    </body>
+</html>
