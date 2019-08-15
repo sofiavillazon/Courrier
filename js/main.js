@@ -40,13 +40,13 @@ function despejarMapa() {
 
 
 // DD
-$('.sidebar .order').on('click', function(){
-    despejarMapa();
-    $(this).toggleClass('active').siblings().removeClass('active');
-    $('.opOne').addClass('active');
-    $('.opTwo').removeClass('active');
-    event.preventDefault();
-});
+// $('.sidebar .order').on('click', function(){
+//     despejarMapa();
+//     $(this).toggleClass('active').siblings().removeClass('active');
+//     $('.opOne').addClass('active');
+//     $('.opTwo').removeClass('active');
+//     event.preventDefault();
+// });
 
 $('.detailOrder .order').on('click', function(){
     if( $(this).hasClass('active') ){
@@ -93,4 +93,15 @@ function newMessage() {
 $('.btn-ped').on('click', function(){
     $("body").animate({ scrollTop: 1200 }, "fast");
     
+});
+
+$('#basic2').selectpicker({
+    liveSearch: true,
+    maxOptions: 1
+  });
+  
+
+// 
+$('.paymode').on('click', function(){
+    $(this).toggleClass('active').siblings().removeClass('active');
 });

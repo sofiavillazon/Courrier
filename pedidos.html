@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Courrier</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap-select.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light justify-content-between flex-wrap flex-md-nowrap">
+                <img class="ml-3" src="img/logo.png" alt="" style="width:200px;">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse scroll3 navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto justify-content-end">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="dashboard.html">Dashboard <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="courrier.html">Control</a>
+                            <ul class="subMenu">
+                                <li><a href="courrier.html">Courrier</a></li>
+                                <li><a href="">Control</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pos.html">Herramientas</a>
+                            <ul class="subMenu">
+                                <li><a href="">Reportes</a></li>
+                                <li><a href="pos.html">POS</a></li>
+                                <li><a href="">Ventas POS</a></li>
+                                <li><a href="">Ubigeo y Zipcode</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tiendas</a>
+                            <ul class="subMenu">
+                                <li><a href="">Compañías</a></li>
+                                <li><a href="">Tiendas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item salir">
+                            <a class="nav-link" href="login.html">Salir</a>
+                        </li>
+                    </ul>
+                    <div class="avatar-left">
+                        <span>
+                            <strong>Admin</strong><br>
+                            Administrador
+                        </span>
+                    </div>
+                    <div class="avatar">
+                        <img class="" src="img/avatar.jpg" alt="" style="width:40px;">
+                        <a href="" class="fa fa-caret-down"></a>
+                        <ul class="subMenu">
+                            <li><a href="login.html">Cerrar Sesión</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="content">
+            <div class="row">
+                <div class="col-8 col-sm-6 col-md-3 col-lg-3 col-xl-3 sidebar ">
+                    <div class="handlerSide"><i class="fas fa-arrows-alt-h "></i></div>
+                    <div class="handlerSide2"><i class="fas fa-arrows-alt-h "></i></div>
+                    <div class="px-3 pt-3 pb-0">
+                        <h3><span>Entrada</span> Pedido nuevo</h3>
+                        <!-- <div class="form-inline">
+                            <select class="pr-2" name="filtro" id="">
+                                <option value="">Código</option>
+                                <option value="">Estado</option>
+                            </select>
+                            <div class="form-label-group ml-3">
+                                <input type="email" id="inputEmail" class=" form-control" placeholder="Estado" required autofocus>
+                                <label for="inputEmail">Estado</label>
+                            </div>
+                        </div> -->
+                        
+                    </div>
+                    <div class="scroll5  pt-0 pb-0">
+                        <div class="divider px-4"><span></span><span>Infomación cliente</span><span></span></div>
+                        <div class="form px-4 mt-0">
+                            <div class="form-label-group ">
+                                <input type="text" id="inputTelefono" class="bgnone form-control" placeholder="Estado" required="">
+                                <label for="inputTelefono">Teléfono</label>
+                            </div>
+                            <div class="form-inline">
+                                <div class="form-label-group mr-2 ">
+                                    <input type="text" id="inputCorreo" class="bgnone form-control" placeholder="Estado">
+                                    <label for="inputCorreo">Cliente</label>
+                                </div>
+                                <div>
+                                    <a class="btn btn-dark2 big mb-2" href="">Buscar</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="divider px-4"><span></span><span>Dirección</span><span></span></div>
+                        <div class="px-4">
+                            <button class="py-3 btn btn-lg btn-dark2 btn-block" data-toggle="modal" data-target="" type="submit">Agregar dirección</button>
+                            
+                            <div class="dirdetalle">
+                                <i class="close fas fa-times"></i>
+                                <h6><span>Calle</span> Av. Primavera <a href=""><i class=" edit fas fa-pencil-alt"></i></a></h6>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="divider px-4"><span></span><span>Detalle de pedido</span><span></span></div>
+                        <div class="px-4 ">
+                            <div class="form-label-group ">
+                                <textarea class="bgnone form-control" id="exampleFormControlTextarea1" placeholder="Detalle del pedido"  rows="3"></textarea>
+                            </div>
+
+                            <div class="form-label-group ">
+                                <input type="text" id="inputprecio" class="bgnone form-control" placeholder="Estado" required="">
+                                <label for="inputprecio">Precio Total</label>
+                                <div class=" mt-2" >
+                                    <button type="button" class="py-3 btn btn-dark2 paymode">Efectivo</button>
+                                    <button type="button" class="py-3 btn btn-dark2 paymode">Con Tarjeta</button>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        
+                        <div class="divider px-4"><span></span><span>Recoger de: </span><span></span></div>
+                        <div class="form-label-group mx-4 ">
+                            <select id="basic2" class="show-tick form-control" title="Empresa" placeholder="Seleccione una empresa" multiple>
+                                <option>La Casa del Alfajor</option>
+                                <option>La choza naútica</option>
+                                <option>Kallayki Caffe</option>
+                                <option>La santina</option>
+                                <option>Pizza Raúl</option>
+                                <option>Kallpa Burger</option>
+                                <option>La choza naútica</option>
+                                <option>Kallayki Caffe</option>
+                                <option>La santina</option>
+                                <option>Pizza Raúl</option>
+                                <option>Kallpa Burger</option>
+                                <option>La choza naútica</option>
+                                <option>Kallayki Caffe</option>
+                                <option>La santina</option>
+                                <option>Pizza Raúl</option>
+                                <option>Kallpa Burger</option>
+                            </select>
+                        </div>
+
+                        <div class="px-4">
+                            <button class="py-3 btn btn-lg btn-orange2 btn-block" data-toggle="modal" data-target="" type="submit">Registrar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-8 col-sm-6 col-md-3 col-lg-3 col-xl-3 detailOrder pedidoStatus px-3 py-4">
+                    <div class="handler"><i class="fas fa-arrows-alt-h"></i></div>
+                    <div class="opOne fade-in active px-2">
+                        <h3><span>Seguimiento</span> Pedidos Abiertos</h3>
+                        <div class="form mt-1">
+                            <div class="form-label-group ">
+                                <input type="text" id="inputTelefono2" class=" form-control" placeholder="Estado" required="">
+                                <label for="inputTelefono2">Teléfono</label>
+                            </div>
+                            <div class="form-inline">
+                                <div class="form-label-group ">
+                                    <input type="text" id="inputCorreo2" class=" form-control" placeholder="Estado">
+                                    <label for="inputCorreo2">Cliente</label>
+                                </div>
+                                <div>
+                                    <a class="btn-orange2 big mb-2" href="">Buscar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroll2">
+                                <!-- courrier 1 -->
+                                <div class="order px-2 active col-12 bgWhite mb-2">
+                                    <div class="cardOrder px-0 py-2">
+                                        <div class="time">
+                                            <span class="check"><i class="far fa-check-circle"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="code col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0"><span class="pill">N° 204-225</span></div>
+                                        </div>
+                                        <h5><span>Cliente</span> Juan Torres | <i class="fas fa-phone"></i> 998899777</h5>
+                                        <p><strong></strong>Dirección: </strong> Av. Primavera 120 - surco</p>
+                                        <p><strong>Precio:</strong> S/. 40.00 - Paga con tarjeta</p>
+                                        <p><strong>Recoge de:</strong> Tienda Molina </p>
+                                    </div>
+                                </div>
+                                <!-- courrier 2 -->
+                                <div class="order px-2 active col-12 bgWhite mb-2">
+                                    <div class="cardOrder px-0 py-2">
+                                        <div>
+                                            <div class="code col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0"><span class="pill">N° 204-225</span></div>
+                                        </div>
+                                        <h5><span>Cliente</span> Juan Torres | <i class="fas fa-phone"></i> 998899777</h5>
+                                        <p><strong></strong>Dirección: </strong> Av. Primavera 120 - surco</p>
+                                        <p><strong>Precio:</strong> S/. 40.00 - Paga con tarjeta</p>
+                                        <p><strong>Recoge de:</strong> Tienda Molina </p>
+                                        
+                                    </div>
+                                </div>
+
+                                <!-- courrier 3 -->
+                                <div class="order px-2 active col-12 bgWhite mb-2">
+                                    <div class="cardOrder px-0 py-2">
+                                        <div>
+                                            <div class="code col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0"><span class="pill">N° 204-225</span></div>
+                                        </div>
+                                        <h5><span>Cliente</span> Juan Torres | <i class="fas fa-phone"></i> 998899777</h5>
+                                        <p><strong></strong>Dirección: </strong> Av. Primavera 120 - surco</p>
+                                        <p><strong>Precio:</strong> S/. 40.00 - Paga con tarjeta</p>
+                                        <p><strong>Recoge de:</strong> Tienda Molina </p>
+                                        
+                                    </div>
+                                </div>
+
+                                    <!-- courrier 4 -->
+                                <div class="order px-2 active col-12 bgWhite mb-2">
+                                    <div class="cardOrder px-0 py-2">
+                                        <div>
+                                            <div class="code col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0"><span class="pill">N° 204-225</span></div>
+                                        </div>
+                                        <h5><span>Cliente</span> Juan Torres | <i class="fas fa-phone"></i> 998899777</h5>
+                                        <p><strong></strong>Dirección: </strong> Av. Primavera 120 - surco</p>
+                                        <p><strong>Precio:</strong> S/. 40.00 - Paga con tarjeta</p>
+                                        <p><strong>Recoge de:</strong> Tienda Molina </p>
+                                        
+                                    </div>
+                                </div>
+                               
+
+                            </div>
+                    </div>
+                    
+                </div>
+                <div class="col-12 col-sm-12 col-md-12  col-lg-9 mapHeight">
+                    <div class="row ">
+                        <div class="col-12 col-sm-12 col-md-12  col-lg-9 stateOrder px-2 py-4">
+                            <h3>Monitoreo de Pedido: <span class="subtittlePrincipal">Estado:(Pedido Asignado), Sultana Menguante,  <i class="fas fa-phone"></i>: 123456789, 13:45:25</span> </h3>
+                            <ul>
+                                <li class="active"><span class="number">1</span><div class="text">Nuevo</div></li>
+                                <li class="active"><span class="number">2</span><div class="text">Esperando Respuesta</div></li>
+                                <li class=""><span class="number">3</span><div class="text">En camino a la tienda</div></li>
+                                <li class=""><span class="number">4</span><div class="text">En camino al cliente</div></li>
+                                <li class=""><span class="number">5</span><div class="text">Entregado</div></li>
+                            </ul>
+                        </div>
+                        <!-- en los pin recuerda eliminar POS1 POS2 POS3 -->
+                        <div class="col-12 map px-0 ">
+                            <div class="pin pos1 noselect">
+                                <div class="info">
+                                    <img src="img/user.png" alt="">
+                                    <h3><span>Destino</span> Enrique Manuel</h3>
+                                    <p>Av.Isabel Católica</p>
+                                </div>
+                                <div class='pulse'></div>
+                                <img class="pinmap" src="img/pinuser.png" alt="">
+                            </div>
+
+                            <div class="pin pos2 noselect">
+                                <div class="info">
+                                    <img src="img/local.png" alt="">
+                                    <h3><span>Origen</span> Choza Nautica</h3>
+                                    <p>Tf. 94758145</p>
+                                </div>
+                                <div class='pulse'></div>
+                                <img class="pinmap" src="img/tienda.png" alt="">
+                            </div>
+                            
+                            <div class="pin pos3 noselect">
+                                <div class="info">
+                                    <img src="img/moto.png" alt="">
+                                    <h3><span>Courrier</span> Enrique Manuel</h3>
+                                    <p>Tel:957452323</p>
+                                    <p>POS: no tiene</p>
+                                    <p><strong>Actualizado hace 20min</strong></p>
+                                </div>
+                                <div class='pulse'></div>
+                                <img class="pinmap" src="img/pin.png" alt="">
+                            </div>
+
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d386950.6511603643!2d-73.70231446529533!3d40.738882125234106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva+York!5e0!3m2!1ses-419!2sus!4v1445032011908" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="js/popper.min.js" charset="utf-8"></script>
+        <script src="js/bootstrap.min.js" charset="utf-8"></script>
+        <script src="js/bootstrap-select.js" charset="utf-8"></script>
+        <!-- Libraries -->
+        <script src="js/main.js" charset="utf-8"></script>
+    </body>
+</html>

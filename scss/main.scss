@@ -849,7 +849,17 @@ header {
       line-height: 6px;
       color: $orange;
       letter-spacing: 1px;
-      
+    }
+  }
+  h6{
+    span{
+      display: flex;
+      text-transform: uppercase;
+      font-size: 11px;
+      line-height: 6px;
+      font-weight: 900;
+      color: $orange !important;
+      letter-spacing: 1px;
     }
   }
   h5{
@@ -1088,6 +1098,98 @@ header {
     }
   }
 }
+.pedidoStatus{
+  background-color: #fff !important;
+  .fa-phone{
+    transform: rotate(95deg)
+  }
+  .pill {
+      background-color: #4e505e;
+      border-radius: 20px;
+      color: #fff;
+      padding: 3px 10px;
+      font-size: 12px;
+  }
+  .total h5{
+    line-height: 0.5em;
+  }
+  .form-control {
+    font-size: 1rem !important;
+  }
+  .orange{
+    color: $orange !important;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  .grey{
+    color: $darkGrey !important;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  .orderInfo{
+    padding: 10px;
+    h5{
+      line-height: 1em;
+    }
+    p{
+      line-height: 1em;
+    }
+    span{
+      color: $orange;
+      font-size: 17px;
+      font-weight: bold;
+      vertical-align: top;
+      line-height: 1.25em;
+    }
+  }
+}
+input.bgnone, textarea.bgnone {
+  background: none !important;
+  font-size: 15px !important;
+  letter-spacing: 1px;
+  padding: 0px;
+}
+
+textarea::placeholder {
+  font-size: 13.5px;
+  letter-spacing: 1px;
+  color: #a0a0a0 !important;
+}
+
+.dirdetalle{
+  background-color: #ffffff87;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 25px;
+    border: 1px solid $lightOrange;
+    text-align: left;
+    font-size: 16px;
+    .span{
+      color: $darkOrange!important;
+    }
+    .close{
+      position: relative;
+      right: -11px;
+      float: right;
+      top: -20px;
+      color: #ff8c0a !important;
+    }
+    a{
+      color: $darkOrange;
+    }
+}
+
+.pedidoStatus .order.active .check {
+  display: block !important;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  text-align: right;
+  padding: 5px;
+  border-radius: 8px;
+  color: #76d680;
+  font-size: 20px;
+}
 
 // MAP
 
@@ -1315,7 +1417,7 @@ header {
       // width: 50% !important;
       z-index: 2;
       position: absolute;
-      background: #f5f6fa;
+      background: #f9f9f9;
       left: 0%;
       animation: fadeIn ease 1s;
     }
@@ -1945,4 +2047,49 @@ img.iconuser {
   top: -8px;
   left: 1px;
   overflow: hidden;
+}
+
+.subtittlePrincipal {
+  color: #85868c !important;
+}
+
+// DIVIDER
+
+.divider {								/* minor cosmetics */
+  display: table; 
+  font-size: 14px; 
+  text-align: center; 
+  width: 100%; 						/* divider width */
+  margin-top: 20px;					/* spacing above/below */
+  margin-bottom: 10px;					/* spacing above/below */
+  color:#b7b9bf;
+}
+.divider span { display: table-cell; position: relative; }
+.divider span:first-child, .divider span:last-child {
+  width: 50%;
+  top: 13px;							/* adjust vertical align */
+  -moz-background-size: 100% 1px; 	/* line width */
+  background-size: 100% 1px; 			/* line width */
+  background-repeat: no-repeat;
+}
+.divider span:first-child {				/* color changes in here */
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b7b9bf), to(#b7b9bf));
+  background-image: -webkit-linear-gradient(180deg, #b7b9bf, #b7b9bf);
+  background-image: -moz-linear-gradient(180deg, #b7b9bf, #b7b9bf);
+  background-image: -o-linear-gradient(180deg, #b7b9bf, #b7b9bf);
+  background-image: linear-gradient(90deg, #b7b9bf, #b7b9bf);
+}
+.divider span:nth-child(2) {
+  color: #b7b9bf; padding: 0px 5px; width: auto; white-space: nowrap;
+}
+.divider span:last-child {				/* color changes in here */
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b7b9bf), to(#b7b9bf));
+  background-image: -webkit-linear-gradient(180deg, #b7b9bf, #b7b9bf);
+  background-image: -moz-linear-gradient(180deg, #b7b9bf, #b7b9bf);
+  background-image: -o-linear-gradient(180deg, #b7b9bf, #b7b9bf);
+  background-image: linear-gradient(90deg, #b7b9bf, #b7b9bf);
+}
+
+.active.paymode{
+  background-color: $darkOrange!important;
 }
