@@ -91,7 +91,17 @@ function newMessage() {
 
 $('.btn-ped').on('click', function(){
     $("body").animate({ scrollTop: 1200 }, "fast");
-    
+});
+var band = 0; 
+$('.checkboxView').on('click', function(){
+   
+    if (band == 0) {
+        band = 1
+        $("#searchqy").text("Télefono");
+    }else{
+        band = 0
+        $("#searchqy").text("Cliente");
+    }
 });
 
 $('#basic2').selectpicker({
