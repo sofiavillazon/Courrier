@@ -412,6 +412,7 @@ header .navbar .avatar img {
   background-color: $darkGrey;
   transition: all 0.4s ease 0s;
 }
+
 .btn-dark2 {
   color: #fff;
   font-weight: 500;
@@ -423,9 +424,30 @@ header .navbar .avatar img {
   font-size: 14px;
   font-weight: bold;
 }
+
 .btn-dark2:hover {
-  color: #fff;
+  color: #eee;
   background-color: $grey;
+  transition: all 0.4s ease 0s;
+}
+.btn-dir {
+  font-weight: 500;
+  background-color: #ffffff87;
+  text-decoration: none;
+  padding: 60px 20px;
+  height: 78px;
+  border: 1px solid #bbbbbb;
+  border-radius: 15px;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #bbbbbb;
+}
+
+.btn-dir:hover {
+  color: #fcac51;
+  border: 1px solid $lightOrange;
+  background-color: #ffffff87;
   transition: all 0.4s ease 0s;
 }
 /*==================================================*/
@@ -1172,10 +1194,16 @@ textarea::placeholder {
       right: -11px;
       float: right;
       top: -20px;
-      color: #ff8c0a !important;
+      color: #969494 !important;
     }
     a{
       color: $darkOrange;
+    }
+    .editar{
+      bottom: 3px;
+      text-decoration: underline !important;
+      position: relative;
+      left: 12px;
     }
 }
 
@@ -2090,6 +2118,77 @@ img.iconuser {
   background-image: linear-gradient(90deg, #b7b9bf, #b7b9bf);
 }
 
+.paymode{
+  i{
+    display: none;
+  }
+  img{
+    display: none;
+  }
+}
+
 .active.paymode{
   background-color: $darkOrange!important;
+  i{
+    display: inline;
+  }
+  img{
+    display: inline;
+  }
+}
+.checkboxView {
+  display: none;
+}
+.checkboxView + label {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 50px;
+  background: linear-gradient(to right, #ff8c0a 0, #fc8b34 45%, #4c4f5e 55%, #4c4f5e 100%) 0 0;
+  background-size: 650px 100%;
+  border-radius: 70px;
+  padding: 7px;
+  cursor: pointer;
+  transition: all 500ms ease;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2) inset;
+}
+.checkboxView + label:before {
+  content: "";
+  background-image: url('../img/courrier.jpg');
+  background-size: 36px 36px;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  border-radius: 100%;
+  // background: #fff;
+  text-align: top;
+  line-height: 36px;
+  font-family: "Cabin", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fd1a15;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: left 500ms ease, color 500ms ease, -webkit-transform 150ms ease;
+  transition: left 500ms ease, color 500ms ease, transform 150ms ease;
+  transition: left 500ms ease, color 500ms ease, transform 150ms ease, -webkit-transform 150ms ease;
+}
+.checkboxView + label:active:before {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.checkboxView:checked + label {
+  background-position-x: -350px;
+}
+.checkboxView:checked + label:before {
+  content: "";
+  background-image: url('../img/phone3.png');
+  color: #007177;
+  left: 100px;
+  background-size: 36px 36px;
+  width: 36px;
+  height: 36px;
 }

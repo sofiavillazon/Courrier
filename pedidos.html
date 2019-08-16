@@ -90,28 +90,34 @@
                     <div class="scroll5  pt-0 pb-0">
                         <div class="divider px-4"><span></span><span>Infomación cliente</span><span></span></div>
                         <div class="form px-4 mt-0">
-                            <div class="form-label-group ">
-                                <input type="text" id="inputTelefono" class="bgnone form-control" placeholder="Estado" required="">
-                                <label for="inputTelefono">Teléfono</label>
-                            </div>
                             <div class="form-inline">
                                 <div class="form-label-group mr-2 ">
-                                    <input type="text" id="inputCorreo" class="bgnone form-control" placeholder="Estado">
-                                    <label for="inputCorreo">Cliente</label>
+                                    <input type="text" id="inputTelefono" class="bgnone form-control" placeholder="Estado" required="">
+                                    <label for="inputTelefono">Teléfono</label>
                                 </div>
                                 <div>
-                                    <a class="btn btn-dark2 big mb-2" href="">Buscar</a>
+                                    <a class="btn  btn-dark2 big mb-2" href="">Buscar</a>
                                 </div>
+                            </div>
+                            <div class="form-label-group">
+                                <input type="text" id="inputCorreo" class="bgnone form-control" placeholder="Estado">
+                                <label for="inputCorreo">Cliente</label>
                             </div>
                         </div>
                         
                         <div class="divider px-4"><span></span><span>Dirección</span><span></span></div>
                         <div class="px-4">
-                            <button class="py-3 btn btn-lg btn-dark2 btn-block" data-toggle="modal" data-target="" type="submit">Agregar dirección</button>
+
+                            <button class="py-3 btn btn-lg btn-dir btn-block" data-toggle="modal" data-target="" type="submit">+ Agregar dirección</button>
+                            
                             
                             <div class="dirdetalle">
                                 <i class="close fas fa-times"></i>
-                                <h6><span>Calle</span> Av. Primavera <a href=""><i class=" edit fas fa-pencil-alt"></i></a></h6>
+                                <h6><span>Calle</span> Av. Primavera </h6>
+                                <p class="mt-0 pt-0">Lorem ipsum dolot sit</p>
+                                <div>
+                                    <a href="" class="float-right editar">Editar</a>
+                                </div>
                             </div>
                         </div>
                         
@@ -122,13 +128,14 @@
                                 <textarea class="bgnone form-control" id="exampleFormControlTextarea1" placeholder="Detalle del pedido"  rows="3"></textarea>
                             </div>
 
+                            <div class=" mt-2" >
+                                <button type="button" class="py-3 btn btn-dark2 paymode">Efectivo <i class="far fa-check-circle"></i></button>
+                                <button type="button" class="py-3 btn btn-dark2 paymode">Con Tarjeta <i class="far fa-check-circle"></i></button>
+                            </div>
+
                             <div class="form-label-group ">
                                 <input type="text" id="inputprecio" class="bgnone form-control" placeholder="Estado" required="">
                                 <label for="inputprecio">Precio Total</label>
-                                <div class=" mt-2" >
-                                    <button type="button" class="py-3 btn btn-dark2 paymode">Efectivo</button>
-                                    <button type="button" class="py-3 btn btn-dark2 paymode">Con Tarjeta</button>
-                                </div>
                             </div>
                         </div>
                             
@@ -160,26 +167,16 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-8 col-sm-6 col-md-3 col-lg-3 col-xl-3 detailOrder pedidoStatus px-3 py-4">
+                <div class="col-8 col-sm-6 col-md-3 col-lg-3 col-xl-3 detailOrder pedidoStatus px-3 py-4">
                     <div class="handler"><i class="fas fa-arrows-alt-h"></i></div>
                     <div class="opOne fade-in active px-2">
                         <h3><span>Seguimiento</span> Pedidos Abiertos</h3>
                         <div class="form mt-1">
-                            <div class="form-label-group ">
-                                <input type="text" id="inputTelefono2" class=" form-control" placeholder="Estado" required="">
-                                <label for="inputTelefono2">Teléfono</label>
-                            </div>
-                            <div class="form-inline">
-                                <div class="form-label-group ">
-                                    <input type="text" id="inputCorreo2" class=" form-control" placeholder="Estado">
-                                    <label for="inputCorreo2">Cliente</label>
-                                </div>
-                                <div>
-                                    <a class="btn-orange2 big mb-2" href="">Buscar</a>
-                                </div>
-                            </div>
+                            
+                            <input class="checkboxView" type="checkbox" id="codepen"/>
+                            <label for="codepen"></label>
                         </div>
-                        <div class="scroll2">
+                        <div class="scroll2 mt-2">
                                 <!-- courrier 1 -->
                                 <div class="order px-2 active col-12 bgWhite mb-2">
                                     <div class="cardOrder px-0 py-2">

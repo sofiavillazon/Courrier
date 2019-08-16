@@ -2,7 +2,6 @@
 $('.handler').on('click', function(){
     $('.detailOrder').toggleClass('oculto').siblings().removeClass('oculto');
     $('.stateOrder').toggleClass('oculto').siblings().removeClass('oculto');
-
 });
 // HANDLER
 
@@ -105,3 +104,5 @@ $('#basic2').selectpicker({
 $('.paymode').on('click', function(){
     $(this).toggleClass('active').siblings().removeClass('active');
 });
+
+
