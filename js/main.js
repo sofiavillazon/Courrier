@@ -3,6 +3,14 @@ $('.handler').on('click', function(){
     $('.detailOrder').toggleClass('oculto').siblings().removeClass('oculto');
     $('.stateOrder').toggleClass('oculto').siblings().removeClass('oculto');
 });
+
+// HANDLER Pedido
+$('.handlerPedido').on('click', function(){
+    $('.detailOrder').toggleClass('resume');
+    $('.sidebar').toggleClass('resume');
+    $('.stateOrder').toggleClass('resume');
+});
+
 // HANDLER
 
 $('.handler2').on('click', function(){

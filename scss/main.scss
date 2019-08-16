@@ -1050,6 +1050,8 @@ header {
   cursor: pointer;
 }
 
+
+
 // Sedundo sidebar
 .handler2{
   background-color: #ff8c0a;
@@ -2198,4 +2200,50 @@ img.iconuser {
   background-size: 36px 36px;
   width: 36px;
   height: 36px;
+}
+
+
+// Sedundo sidebar
+.handlerPedido{
+  background-color: #ff8c0a;
+  z-index: 1;
+  position: absolute;
+  right: 10px;
+  padding: 14px;
+  top: -8px;
+  color: #fff;
+  font-size: 19px;
+  border-radius: 0px 8px 8px 8px;
+  cursor: pointer;
+}
+
+.sidebar.resume{
+  left: -25% !important;
+  transition-duration: 3s;
+}
+
+.stateOrder.resume{
+  margin-top: 0px;
+  margin-left: 0%;
+  // transition-duration: 0.3s;
+}
+
+.detailOrder.resume{
+  left: 0%;
+  
+}
+
+
+@media (max-width: 754px)
+{
+  .sidebar.resume{
+    z-index:3;
+  }
+  .sidebar.resume{
+    left: 0% !important;
+    transition-duration: 1s;
+  }
+  .handlerPedido {
+    right: -45px;
+  }
 }
