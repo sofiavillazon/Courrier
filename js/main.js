@@ -124,3 +124,23 @@ $('.paymode').on('click', function(){
 });
 
 
+// dirección mode
+$('.dirSave').on('click', function(){
+    var dirvalue;
+    var dirdetail;
+    $dirvalue = $(".dirvalue",this).text();
+    $dirdetail = $(".dirdetail",this).text();
+    $('#modalCambioDireccion').modal('toggle');
+    $('.jjj').removeClass('noshow');
+    $('.dirdetalle').removeClass('grayborder');
+    $("#direccionData").html('<div data-toggle="modal" data-target="#modalCambioDireccion"><h6><span>Calle</span>'+$dirvalue+'</h6><p class="mt-0 pt-0">'+$dirdetail+'</p> </div>')
+    $(".btn-dir").css("border"," 1px solid #ff8c0a");
+});
+
+$('.jjj').on('click', function(){
+    $('.jjj').addClass('noshow');
+    $('.dirdetalle').addClass('grayborder');
+    $("#direccionData").html('<div data-toggle="modal" data-target="#modalCambioDireccion"> <div class="text-center">+ Agregar dirección</div></div>')
+    
+});
+

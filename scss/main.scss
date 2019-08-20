@@ -435,7 +435,6 @@ header .navbar .avatar img {
   background-color: #ffffff87;
   text-decoration: none;
   padding: 60px 20px;
-  height: 78px;
   border: 1px solid #bbbbbb;
   border-radius: 15px;
   margin-top: 20px;
@@ -1184,18 +1183,18 @@ textarea::placeholder {
   background-color: #ffffff87;
     margin-top: 10px;
     border-radius: 10px;
-    padding: 25px;
-    border: 1px solid $lightOrange;
+    padding: 0px;
     text-align: left;
     font-size: 16px;
+    cursor:pointer;
     .span{
       color: $darkOrange!important;
     }
-    .close{
+    .close {
       position: relative;
-      right: -11px;
+      right: 11px;
       float: right;
-      top: -20px;
+      top: 8px;
       color: #969494 !important;
     }
     a{
@@ -1207,7 +1206,14 @@ textarea::placeholder {
       position: relative;
       left: 12px;
     }
+    p{
+      color: rgb(151, 151, 151);
+    }
+    h6{
+      margin-bottom: .01em;
+    }
 }
+
 
 .pedidoStatus .order.active .check {
   display: block !important;
@@ -2196,10 +2202,11 @@ img.iconuser {
   content: "";
   background-image: url('../img/phone3.png');
   color: #007177;
-  left: 100px;
+  left: 108px;
   background-size: 36px 36px;
   width: 36px;
   height: 36px;
+  
 }
 
 
@@ -2218,7 +2225,7 @@ img.iconuser {
 }
 
 .sidebar.resume{
-  left: -25% !important;
+  left: 0% !important;
   transition-duration: 3s;
 }
 
@@ -2240,10 +2247,40 @@ img.iconuser {
     z-index:3;
   }
   .sidebar.resume{
-    left: 0% !important;
+    left: -70% !important;
     transition-duration: 1s;
   }
   .handlerPedido {
     right: -45px;
+  }
+}
+
+.noshow{
+  display: none;
+}
+
+.grayborder{
+  border: 1px solid #bbbbbb !important;
+}
+
+#direccionData{
+  padding: 20px;
+}
+
+.dirSave{
+  background-color: #ffffff87;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 0px;
+  text-align: left;
+  font-size: 16px;
+  border: 1px solid #bbbbbb !important;
+  cursor: pointer;
+  padding: 20px 20px 5px 20px;
+  &:hover{
+    border: 2px solid $lightOrange !important;
+  }
+  &:focus{
+    border: 2px solid $lightOrange !important;
   }
 }
