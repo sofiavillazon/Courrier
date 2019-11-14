@@ -335,19 +335,22 @@ header .navbar .avatar img {
 // MAP
 
 .map-responsive{
-  padding-bottom: 60%;
+  // padding-bottom: 60%;
   position: relative;
   height: 0;
 }
 .map-responsive iframe{
   left:0;
   top:0;
-  height: calc(100vh - 73px);
+  // height: calc(100vh - 124px);
   width:100%;
   position:absolute;
 }
-
-.mapHeight, .sidebar,.detailOrder{
+.mapHeight,.map-responsive iframe
+{
+  height: calc(100vh - 124px);
+}
+.sidebar,.detailOrder{
   height: calc(100vh - 70px);
   box-sizing: border-box;
 }
@@ -859,6 +862,7 @@ header {
     -moz-box-shadow: 7px 0px 10px 0px rgba(0,0,0,0.1);
     box-shadow: 7px 0px 10px 0px rgba(0,0,0,0.1);
     // height: calc(100vh - 73px);
+    height: calc(89vh - 48px);
     z-index: 3;
   }
   h3{
@@ -912,7 +916,7 @@ header {
   }
   .scroll2{
     overflow-y:auto;
-    height: 55vh;
+    height: calc(70vh - 139px);
     width: 100%;
   }
   .scroll3{
@@ -920,9 +924,13 @@ header {
     height: 40vh;
     width: 100%;
   }
+  .scroll6{
+    overflow-y:auto;
+    height: calc(70vh - 48px);
+  }
   .scroll{
     overflow-y:auto;
-    height: 70vh;
+    height: calc(70vh - 54px);
     .cardOrder{
       background-color: $white;
       >div{
@@ -1088,7 +1096,8 @@ header {
     position: absolute;
     background: $lightGrey;
     left: 25%;
-    animation: fadeIn ease 1s;
+    // animation: fadeIn ease 1s;
+    height: calc(89vh - 48px);
     // height: calc(100vh - 73px);
     .total h5{
       line-height: 0.5em;
@@ -1982,7 +1991,7 @@ img.iconuser {
 .scroll5{
   overflow-y: auto;
   overflow-x: hidden;
-  height: 81vh;
+  height: calc(79vh - 54px);
   width: 100%;
 }
 
@@ -2283,4 +2292,14 @@ img.iconuser {
   &:focus{
     border: 2px solid $lightOrange !important;
   }
+}
+
+footer{
+    background-color: #ececec;
+    padding: 0px 60px 0px 20px;
+    width: 100%;
+    z-index: 6 !important;
+    height: auto;
+    position: fixed;
+    bottom: 0px;
 }
